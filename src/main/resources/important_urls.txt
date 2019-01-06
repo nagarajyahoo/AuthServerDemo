@@ -1,0 +1,11 @@
+--password
+http://localhost:8082/oauth/token?grant_type=password&client_id=live-test&username=xxxx&password=xxxxx
+Authorization header should have client and secret
+
+
+--authorizarion code
+http://localhost:8082/oauth/authorize?grant_type=authorization_code&client_id=live-test&redirect_uri=http://localhost:8080/token&state=dfgdg&response_type=code
+
+http://localhost:8082/oauth/token?code=1s6FhK&grant_type=authorization_code&redirect_uri=http://localhost:8080/token
+Authorization header should have client and secret
+
